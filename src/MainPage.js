@@ -11,7 +11,7 @@ function Home(){
             Также Вы можете добавить свои тесты.</p>
             </div>
             <ButtonSend link={"create"} function={"Создать тест"}/>
-            <ButtonSend link={"test"} function={"Пройти тест"}/>
+            <ButtonSend link={"tests"} function={"Пройти тест"}/>
         </div>
     )
 }

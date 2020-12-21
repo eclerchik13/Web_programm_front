@@ -1,4 +1,4 @@
-import React , {useState, useEffect} from "react";
+import React from "react";
 import {A} from "hookrouter";
 
 function InputField(props){
@@ -43,19 +43,4 @@ function QuestCard(props){
     )
 }
 
-function LinkQuestion(props){
-    return(
-        <p><div className={"LinkQuestion"}>
-            <A href={"test/"+props.id}>
-                <div className={"InfoTest"}>
-                    <p>Name: {props.name}</p>
-                    <p>Number of questions: {props.number}</p>
-                    <p>Time: {props.time+" minutes"}</p>
-                </div>
-            </A>
-        </div>
-        </p>
-    )
-}
-
-export {InputField, ButtonInput, NotEntry, ButtonSend, QuestCard, LinkQuestion}
+export {InputField, ButtonInput, NotEntry, ButtonSend, QuestCard}

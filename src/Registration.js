@@ -22,14 +22,12 @@ function Registration(){
                     navigate('/login')
                 }
                 else{
-                    alert('Error with registration');
+                    console.error('Error with registration');
                 }
-
             })
     }
     const submit = (e) => {
         e.preventDefault();
-        //alert(JSON.stringify(state));
         CreateUser();
     }
     return(

@@ -21,13 +21,12 @@ function SignIn(){
                     navigate('/');
                 }
                 else {
-                    alert('Error with login!')
+                    console.error('Error with login!')
                 }
             }
             )}
     const submit = (e) => {
         e.preventDefault();
-        //alert(JSON.stringify(state));
         Auth();
     }
     return(

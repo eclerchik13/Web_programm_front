@@ -5,7 +5,7 @@ function NotFound(){
         <div className="Error">
             <div className="head">Error</div>
             <div className="InfoAboutSubject">
-                <p>You have some problem</p>
+                <p>404 You have some problem</p>
             </div>
         </div>
     )
