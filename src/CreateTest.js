@@ -1,4 +1,4 @@
-import React ,{useState, useEffect} from 'react'
+import React ,{useState} from 'react'
 import {navigate} from "hookrouter"
 import {ButtonInput, InputField, QuestCard} from "./components/input";
 
@@ -31,7 +31,7 @@ function CreateTest(){
                     navigate('/')
                 }
                 else{
-                    alert('Error with create test');
+                    console.error('Error with create test');//может navigate error with message
                 }
 
             })
@@ -39,7 +39,6 @@ function CreateTest(){
 
     const submit = (e) => {
         e.preventDefault();
-        //alert(JSON.stringify(state));
         CreateNewTest();
     }
 
@@ -58,12 +57,12 @@ function CreateTest(){
 
         if (newNumber > state.count) {
             for (let i = 0; i < newNumber - state.count; i++) {
-                array.push({
-                    body: "No body"
-                })
-                array_2.push({
-                    answer: ""
-                })
+                array.push(
+                    {body: "No body"}
+                )
+                array_2.push(
+                    {answer: ""}
+                )
             }
         }else{
             array.splice(-(state.count - newNumber),state.count - newNumber)
@@ -104,6 +103,5 @@ function CreateTest(){
         </div>
     )
 }
-
 
 export {CreateTest}
